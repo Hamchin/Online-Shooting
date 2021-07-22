@@ -231,7 +231,7 @@ function missileEmit(socketId, direction) {
   const missileId = Math.floor(Math.random() * 10 ** 17).toString();
   let missileX = emitPlayerObj.x;
   let missileY = emitPlayerObj.y;
-  if (gameObj.playersMap.has(socketId) && process.env.HOST) {
+  if (gameObj.playersMap.has(socketId)) {
     const player = gameObj.playersMap.get(socketId);
     const delayDistance = player.speed === 2 ? 50 : 30;
     if (direction === 'left') missileX -= delayDistance;

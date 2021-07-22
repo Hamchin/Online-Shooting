@@ -4,23 +4,14 @@ https://online-shooting.herokuapp.com
 
 ## Development
 
-### Server 1
-
-After cloning:
-
-```
+```sh
+# Setup
 $ npm install
-```
 
-When starting:
+# Start
+$ npm start
 
-```
-$ PORT=8000 npm start
-```
-
-### Server 2
-
-```
+# Watch
 $ npm run watch
 ```
 
@@ -28,6 +19,6 @@ $ npm run watch
 
 ```
 $ heroku create
-$ heroku config:set HOST="<YOUR HOST>"
+$ heroku config:set SERVICE_URL="https://XXXXXXXXXX.herokuapp.com"
 $ git push heroku master
 ```
